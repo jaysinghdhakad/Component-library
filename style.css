@@ -1,6 +1,9 @@
 :root {
   --red-color: #fa0f00;
 }
+body{
+  width:582px;
+}
 
 .header {
   grid-area: hd;
