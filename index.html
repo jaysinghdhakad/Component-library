@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header"></div>
+      <div class="sidebar">
+       <span style="margin-top: 1rem;">Components</span>
+        <div class="tabs"><button class="tabs" onclick="showStyle('Avatars')">Avatars</button>
+         
+          <button class="tab" onclick="showStyle('Alerts')">Alerts</button>
+          <button class="tab" onclick="showStyle('badges')">Badges</button>
+          <button class="tab" onclick="showStyle('buttons')">Button</button>
+          <button class="tab" onclick="showStyle('cards')">Cards</button>
+          <button class="tab" onclick="showStyle('images')">Images</button>
+          <button class="tab" onclick="showStyle('input')">Inputs</button>
+          <button class="tab" onclick="showStyle('lists')">Lists</button>
+          <button class="tab" onclick="showStyle('navigation')">Desktop navigation</button>
+          <button class="tab" onclick="showStyle('Modal')">Modal</button>
+          <button class="tab" onclick="showStyle('Ratings')">Rating</button>
+          <button class="tab" onclick="showStyle('grids')">Grids</button>
+          <button class="tab" onclick="showStyle('text-utilities')">Heading and Texts</button>
+          <button class="tab" onclick="showStyle('snack-bars')">Snack-bar</button>
+        </div>
+      </div>
+      <div class="body">
+        <div class="introduction">
+          <h2 class="main-heading">Welcome to my Component Library</h2>
+          <div class="center-heading">click on the the buttons on the left side to view components</div>
+        </div>
+        <div class="Avatars"  id="tabcontents" >
+          <h2 class="main-heading">Avatars</h2>
+          <img class="Avatar" src="Avatar images/handsome-patrik.jpg" />
+          <img class="Avatar" src="Avatar images/spongbob.png" />
+          <img class="Avatar" src="Avatar images/plankton.png" />
+          <img class="Avatar" src="Avatar images/patrik.png" />
+        </div>
+        <div class="Alerts" id="tabcontents">
+          <h2 class="main-heading">Alerts</h2>
+          <div class="Alert success">
+            <img src="Alert images/success.jpg" />
+            <span>This is a success-alert</span>
+          </div>
+          <div class="Alert failure">
+            <img src="Alert images/faluire.webp" />
+            <span>This is a failure-alert</span>
+          </div>
+          <div class="Alert warning">
+            <img src="Alert images/warrning.webp" />
+            <span>This is a warning-alert</span>
+          </div>
+          <div class="Alert info">
+            <img src="Alert images/info.jpg" />
+            <span>This is an info-alert</span>
+          </div>
+        </div>
+        <div class="badges" id="tabcontents">
+          <h2 class="main-heading">Badges</h2>
+
+          <div class="badge cart">
+            <img src="New folder/cart.png" />
+          </div>
+          <div class="badge placeholder">
+            <img src="New folder/placeholder.png" />
+          </div>
+        </div>
+        <div class="buttons" id="tabcontents">
+          <h2 class="main-heading">Button</h2>
+          <button class="button-primary">PRIMARY-BUTTON</button>
+          <button class="button-link">LINK</button>
+          <button class="button-icon fa fa-cart-plus"></button>
+          <button class="button-floating fa fa-plus"></button>
+        </div>
+        <div class="cards" id="tabcontents">
+          <h2 class="main-heading space">Cards</h2>
+          <div class="card-badge">
+            <div class="badge placeholder">
+              <img src="New folder/placeholder.png" />
+            </div>
+            <div class="text">
+              <span>@username</span>
+              <div class="post">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+          <div class="card Dismiss">
+            <button class="dismiss">X</button>
+            <img src="Avatar images/spongbob.png" />
+            <div class="post">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="card textoverlay">
+            <span class="overlay">This test overlays on image</span>
+            <img src="Avatar images/patrik.png" />
+            <div class="post">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="card textonly">
+            <span>Text only card</span>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="card vertical">This card is vertical</div>
+          <div class="card horizontal">This card is horizontal</div>
+        </div>
+        <div class="images" id="tabcontents">
+          <h2 class="main-heading">Images</h2>
+          <div class="responsive-image">
+            <img src="Avatar images/whale.jpg" />
+            <div>This is an reponsive image fitting the parent div.</div>
+          </div>
+          <img class="round-image" src="Avatar images/handsome-patrik.jpg" />
+        </div>
+        <div class="input" id="tabcontents">
+          <h2 class="main-heading">Input</h2>
+          <input class="textbox" placeholder="Input Text" />
+          <div class="validation-input">
+            <span class="error">Error</span>
+            <input class="textbox" placeholder="Input Text" />
+            <div>Input Doesn't match</div>
+          </div>
+          
+        </div>
+        <div class="lists" id="tabcontents">
+          <h2 class="main-heading">Lists</h2>
+          <h2 class="main-heading">Spaced list</h2>
+          <div class="list spaced">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+          </div>
+          <h2 class="main-heading">Stacked list</h2>
+          <div class="list stacked">
+            <li>
+              Item 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li>
+              Item 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li>
+              Item 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li>
+              Item 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li>
+              Item 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+          </div>
+        </div>
+        <div class="navigation" id="tabcontents">
+          <h2 class="main-heading">Desktop navigation</h2>
+          <nav class="desktop-navigation">
+            <a href="/"><img src="New folder/placeholder.png" /></a>
+            <div class="search">
+              <input placeholder="search" />
+              <button class="fa fa-search"></button>
+            </div>
+            <a href="/"><img src="button images/setting.png" /></a>
+          </nav>
+        </div>
+        <div class="Modal" id="tabcontents">
+          <h2 class="main-heading">Modal</h2>
+          <div class="modal">
+            <span>Heading</span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor
+            </p>
+          </div>
+        </div>
+        <div class="Ratings" id="tabcontents">
+          <h2 class="main-heading">Ratings</h2>
+          <div class="rating">
+            <img src="button images/star.png" />
+          </div>
+
+          <div class="rating">
+            <img src="button images/star.png" />
+            <img src="button images/star.png" />
+          </div>
+
+          <div class="rating">
+            <img src="button images/star.png" />
+            <img src="button images/star.png" />
+            <img src="button images/star.png" />
+          </div>
+          <div class="rating">
+            <img src="button images/star.png" />
+            <img src="button images/star.png" />
+            <img src="button images/star.png" />
+            <img src="button images/star.png" />
+          </div>
+          <div class="rating">
+            <img src="button images/star.png" />
+            <img src="button images/star.png" />
+            <img src="button images/star.png" />
+            <img src="button images/star.png" />
+            <img src="button images/star.png" />
+          </div>
+        </div>
+        <div class="grids" id="tabcontents">
+          <h2 class="main-heading">Grids</h2>
+          <div class="grid two">
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="grid three">
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+        </div>
+        <div class="text-utilities" id="tabcontents">
+          <h2 class="main-heading">Headings and Texts</h2>
+          <div class="large-heading">This is a large heading</div>
+          <div class="medium-heading">This is a medium heading</div>
+          <div class="small-heading">This is small heading</div>
+          <div class="small-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="grey-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="center-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+        </div>
+
+        <div class="snack-bars" id="tabcontents">
+          <h2 class="main-heading">Snackbar</h2>
+          <div class="open-snackbar">
+            <button>OPEN SNACKBAR</button>
+          </div>
+          <div class="snackbar">
+            <div class="info">some information</div>
+            <button class="undo">UNDO</button>
+            <button class="close">X</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="App.js"></script>
+  </body>
+</html>

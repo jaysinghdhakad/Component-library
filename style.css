@@ -1,0 +1,420 @@
+:root {
+  --red-color: #fa0f00;
+}
+
+.header {
+  grid-area: hd;
+  background-color: aquamarine;
+}
+.sidebar {
+  grid-area: sb;
+  background-color: burlywood;
+}
+.body {
+  grid-area: bd;
+  background-color: transparent;
+}
+.wrapper {
+  width: 100%;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 1.3fr 7fr;
+  grid-template-rows: 0.5fr 7fr;
+  grid-template-areas:
+    "hd  hd"
+    "sb  bd";
+}
+.main-heading {
+  text-align: center;
+}
+.Avatar{
+  display: block;
+  width: 75px;
+  height: 70px;
+  background-color: blue;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+.Alerts > .Alert {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 2rem;
+  padding: 2px;
+  border-radius: 8px;
+}
+.Alert > img {
+  margin-left: 3rem;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+.Alert > span {
+  margin-left: 1rem;
+}
+.Alerts > .success {
+  background-color: rgb(99, 218, 105, 1);
+}
+.Alerts > .failure {
+  background-color: rgb(253, 92, 92);
+}
+.Alerts > .warning {
+  background-color: rgb(235, 238, 39);
+}
+.Alerts > .info {
+  background-color: rgb(32, 112, 233);
+}
+/* .badges > .badge{
+  width:100%;
+  
+} */
+.badge > img {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+.buttons {
+  width: 100%;
+  position: relative;
+}
+.button-primary {
+  display: block;
+  color: white;
+  box-shadow: 0.5px 2px grey;
+  background-color: var(--red-color);
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 1rem auto;
+}
+.button-link {
+  display: block;
+  color: black;
+  box-shadow: 0.5px 2px grey;
+  background-color: transparent;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 1rem auto;
+}
+.button-floating {
+  height: 35px;
+  color: red;
+  width: 35px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  left: 48.5%;
+}
+.button-icon {
+  display: block;
+  font-size: 20px;
+  height: 35px;
+  color: red;
+  width: 35px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin: 1rem auto;
+}
+.space {
+  margin-top: 5rem;
+}
+.card-badge img {
+  margin: none;
+  height: 35px;
+  width: 35px;
+}
+
+.card-badge {
+  display: block;
+  margin: 1rem auto;
+
+  width: 45%;
+  height: auto;
+  /* border: 1px solid grey; */
+  padding: 0.6rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+.card-badge > .text {
+  padding: 10px;
+}
+.card-badge .post {
+  padding: 5px;
+}
+.card {
+  display: block;
+  margin: 1rem auto;
+
+  width: 45%;
+  height: auto;
+  /* border: 1px solid grey; */
+  padding: 6px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+.Dismiss > .dismiss {
+  position: absolute;
+  right: 0;
+  top: 0.1rem;
+
+  border-radius: 50%;
+  border: none;
+  font-size: 0.8rem;
+  background-color: grey;
+}
+
+.card img {
+  width: 100%;
+  background-color: grey;
+}
+.card .overlay {
+  position: absolute;
+}
+.textonly > span {
+  font-weight: bold;
+}
+.cards > .vertical {
+  height: 300px;
+  width: 150px;
+}
+.cards > .horizontal {
+  height: 150px;
+  width: 300px;
+}
+.responsive-image {
+  display: block;
+  margin: 1rem auto;
+  height: 300px;
+  width: 200px;
+  /* border: 1px solid grey; */
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+.responsive-image > img {
+  width: 100%;
+  height: auto;
+}
+.round-image {
+  display: block;
+  margin: 1rem auto;
+  box-shadow: 1px 3px grey;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.textbox {
+  display: block;
+  margin: 1rem auto;
+  height: 2.3rem;
+  padding: 6px;
+  width: 10rem;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 1px 2px grey;
+}
+.validation-input {
+  padding: none;
+  width: 11rem;
+  display: block;
+  margin: 0rem auto;
+  position: relative;
+}
+.validation-input > .textbox {
+  border: 1px solid red;
+  box-shadow: 1px 2px red;
+  margin: 0 0;
+}
+.validation-input > .error {
+  color: red;
+  position: absolute;
+  top: -0.5rem;
+  background-color: white;
+}
+.validation-input > div {
+  margin-top: 5px;
+  text-align: center;
+  color: red;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: space-between;
+}
+.spaced > li {
+  list-style: none;
+  font-size: 1.7rem;
+  font-size: bold;
+}
+
+.stacked > li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  height: 60px;
+  background-color: rgb(27, 245, 143);
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.desktop-navigation {
+  border: 1px solid grey;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.desktop-navigation img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.desktop-navigation > .search {
+  display: flex;
+  align-items: center;
+}
+.search > button {
+  height: 2rem;
+}
+.search > input {
+  border: 1px solid black;
+  height: 1.7rem;
+  text-align: center;
+}
+.modal {
+  border: 1px solid grey;
+  box-shadow: 1px 2px grey;
+
+  margin: 1rem auto;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.modal > span {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.modal > p {
+  text-align: center;
+}
+.rating {
+  text-align: center;
+}
+.rating > img {
+  width: 30px;
+}
+.grid > div {
+  border: 1px solid grey;
+  padding: 8px;
+}
+.grid {
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  display: grid;
+}
+.two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.large-heading {
+  margin: 1rem 0.5rem;
+  font-size: 30px;
+}
+.medium-heading {
+  margin: 1rem 0.5rem;
+  font-size: 25px;
+}
+.small-heading {
+  margin: 1rem 0.5rem;
+  font-size: 20px;
+}
+.small-text {
+  margin: 1rem 0.5rem;
+  font-size: 12px;
+}
+.grey-text {
+  margin: 1rem 0.5rem;
+  color: grey;
+}
+.center-text {
+  margin: 1rem 0.5rem;
+  text-align: center;
+}
+.open-snackbar {
+  width: 300px;
+  border: 1px solid grey;
+  display: block;
+  margin: 1rem auto;
+}
+.open-snackbar > button {
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+}
+.snackbar {
+  height: 2rem;
+  width: 20rem;
+  border: 1px solid grey;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  background-color: rgb(50, 50, 50, 1);
+  border-radius: 3px;
+  position: relative;
+}
+.snackbar > .info {
+  width: 70%;
+  color: white;
+  font-size: 20px;
+}
+.snackbar > .undo {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-weight: bold;
+}
+.snackbar > .close {
+  color: white;
+  position: absolute;
+  right: 0.2rem;
+  border: none;
+  background-color: transparent;
+}
+#tabcontents {
+  display: none;
+}
+
+.Avatars{
+  display:block;
+}
+.tabs{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab{
+  margin-top: 0.5rem;
+}
+.center-heading{
+  text-align: center;
+}
