@@ -1,36 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 :root {
-  --red-color: #fa0f00;
+  --red-color:#3981d9 ;
 }
-body{
-  width:582px;
+body {
+  width: 700px;
+  font-family: 'Pangolin', cursive;
 }
-
 .header {
   grid-area: hd;
   background-color: aquamarine;
 }
 .sidebar {
   grid-area: sb;
-  background-color: burlywood;
+  background-color: #223846;
 }
 .body {
   grid-area: bd;
-  background-color: transparent;
+  background-color: #f0f4f7;
 }
 .wrapper {
   width: 100%;
   height: 1000px;
   display: grid;
-  grid-template-columns: 1.3fr 7fr;
-  grid-template-rows: 0.5fr 7fr;
-  grid-template-areas:
-    "hd  hd"
-    "sb  bd";
+  grid-template-columns: 2.5fr 7fr;
+
+  grid-template-areas: "sb  bd";
 }
 .main-heading {
   text-align: center;
 }
-.Avatar{
+.Avatar {
   display: block;
   width: 75px;
   height: 70px;
@@ -38,7 +37,7 @@ body{
   border-radius: 50%;
   margin: 1rem auto;
 }
-.Alerts > .Alert {
+ .Alert {
   display: flex;
   align-items: center;
   margin: 0.5rem 2rem;
@@ -58,7 +57,7 @@ body{
   background-color: rgb(99, 218, 105, 1);
 }
 .Alerts > .failure {
-  background-color: rgb(253, 92, 92);
+  background-color: rgb(247, 12, 12);
 }
 .Alerts > .warning {
   background-color: rgb(235, 238, 39);
@@ -86,7 +85,7 @@ body{
   color: white;
   box-shadow: 0.5px 2px grey;
   background-color: var(--red-color);
-  border: 1px solid red;
+  border: 1px solid var(--red-color);
   border-radius: 5px;
   padding: 6px;
   margin: 1rem auto;
@@ -96,15 +95,16 @@ body{
   color: black;
   box-shadow: 0.5px 2px grey;
   background-color: transparent;
-  border: 1px solid red;
+  border: 1px solid var(--red-color);
   border-radius: 5px;
   padding: 6px;
   margin: 1rem auto;
 }
 .button-floating {
   height: 35px;
-  color: red;
+  color: var(--red-color);
   width: 35px;
+  border: 1px solid var(--red-color);
   border-radius: 50%;
   background-color: transparent;
   position: absolute;
@@ -114,14 +114,16 @@ body{
   display: block;
   font-size: 20px;
   height: 35px;
-  color: red;
+  color: var(--red-color);
   width: 35px;
+  border: 1px solid var(--red-color);
   border-radius: 50%;
   background-color: transparent;
   margin: 1rem auto;
 }
-.space {
-  margin-top: 5rem;
+.center-heading-float{
+  margin-top: 3rem;
+  text-align: center;
 }
 .card-badge img {
   margin: none;
@@ -170,7 +172,7 @@ body{
   border-radius: 50%;
   border: none;
   font-size: 0.8rem;
-  background-color: grey;
+  background-color: white;
 }
 
 .card img {
@@ -230,6 +232,7 @@ body{
   width: 11rem;
   display: block;
   margin: 0rem auto;
+  margin-top: 1rem;
   position: relative;
 }
 .validation-input > .textbox {
@@ -292,7 +295,7 @@ body{
 }
 .search > input {
   border: 1px solid black;
-  height: 1.7rem;
+  height: 1.75rem;
   text-align: center;
 }
 .modal {
@@ -316,16 +319,19 @@ body{
 }
 .rating {
   text-align: center;
+  
 }
 .rating > img {
   width: 30px;
+ border-radius: 50%;
+ 
 }
 .grid > div {
   border: 1px solid grey;
   padding: 8px;
 }
 .grid {
-  width: 100%;
+  width: 96%;
   height: auto;
   padding: 8px;
   display: grid;
@@ -407,17 +413,43 @@ body{
   display: none;
 }
 
-.Avatars{
-  display:block;
+.Avatars {
+  display: block;
 }
-.tabs{
-  display:flex;
+.tabs {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  padding:10px;
 }
-.tab{
-  margin-top: 0.5rem;
+.tab {
+  margin-top: 1rem;
+  background-color:#f0f4f7;
+  border-radius: 8px;
+  border: none;
 }
-.center-heading{
+.tab:hover {
+  cursor: pointer;
+}
+.center-heading {
+  margin-top: 1rem;
   text-align: center;
+  
+}
+.sidebar-image{
+  margin-top:3rem;
+  width:100%;
+  height:auto;
+  padding:2px;
+}
+.Active{
+  
+  background-color: #5f93c2;
+  border: 2.5px solid black;
+  color: white;
+}
+.html-image{
+  width:100%;
+ display:block;
+ margin: 2rem auto;
 }

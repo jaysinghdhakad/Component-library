@@ -15,35 +15,63 @@
     <div class="wrapper">
       <div class="header"></div>
       <div class="sidebar">
-       <span style="margin-top: 1rem;">Components</span>
-        <div class="tabs"><button class="tabs" onclick="showStyle('Avatars')">Avatars</button>
-         
-          <button class="tab" onclick="showStyle('Alerts')">Alerts</button>
-          <button class="tab" onclick="showStyle('badges')">Badges</button>
-          <button class="tab" onclick="showStyle('buttons')">Button</button>
-          <button class="tab" onclick="showStyle('cards')">Cards</button>
-          <button class="tab" onclick="showStyle('images')">Images</button>
-          <button class="tab" onclick="showStyle('input')">Inputs</button>
-          <button class="tab" onclick="showStyle('lists')">Lists</button>
-          <button class="tab" onclick="showStyle('navigation')">Desktop navigation</button>
-          <button class="tab" onclick="showStyle('Modal')">Modal</button>
-          <button class="tab" onclick="showStyle('Ratings')">Rating</button>
-          <button class="tab" onclick="showStyle('grids')">Grids</button>
-          <button class="tab" onclick="showStyle('text-utilities')">Heading and Texts</button>
-          <button class="tab" onclick="showStyle('snack-bars')">Snack-bar</button>
+        <img class="sidebar-image" src="button images/components.png" />
+
+        <div class="tabs">
+          <button class="tab" onclick="showStyle(event,'Avatars')">
+            Avatars
+          </button>
+
+          <button class="tab" onclick="showStyle(event,'Alerts')">
+            Alerts
+          </button>
+          <button class="tab" onclick="showStyle(event,'badges')">
+            Badges
+          </button>
+          <button class="tab" onclick="showStyle(event,'buttons')">
+            Button
+          </button>
+          <button class="tab" onclick="showStyle(event,'cards')">Cards</button>
+          <button class="tab" onclick="showStyle(event,'images')">
+            Images
+          </button>
+          <button class="tab" onclick="showStyle(event,'input')">Inputs</button>
+          <button class="tab" onclick="showStyle(event,'lists')">Lists</button>
+          <button class="tab" onclick="showStyle(event,'navigation')">
+            Desktop navigation
+          </button>
+          <button class="tab" onclick="showStyle(event,'Modal')">Modal</button>
+          <button class="tab" onclick="showStyle(event,'Ratings')">
+            Rating
+          </button>
+          <button class="tab" onclick="showStyle(event,'grids')">Grids</button>
+          <button class="tab" onclick="showStyle(event,'text-utilities')">
+            Heading and Texts
+          </button>
+          <button class="tab" onclick="showStyle(event,'snack-bars')">
+            Snack-bar
+          </button>
         </div>
       </div>
       <div class="body">
         <div class="introduction">
           <h2 class="main-heading">Welcome to my Component Library</h2>
-          <div class="center-heading">This component is designed for mobile devices for now.Click on the the buttons on the left side to view components</div>
+          <div class="center-heading">
+            This component is designed for mobile devices for now.Click on the
+            the buttons on the left side to view components
+          </div>
         </div>
-        <div class="Avatars"  id="tabcontents" >
+        <div class="Avatars" id="tabcontents">
           <h2 class="main-heading">Avatars</h2>
           <img class="Avatar" src="Avatar images/handsome-patrik.jpg" />
           <img class="Avatar" src="Avatar images/spongbob.png" />
           <img class="Avatar" src="Avatar images/plankton.png" />
           <img class="Avatar" src="Avatar images/patrik.png" />
+          <div class="center-heading-float">
+            Above are the Avatars which can be used on websites for profile.
+            Below is the html code, which I used to implement them here
+          </div>
+          <img class="html-image" src="code/Avatar-html.png" />
         </div>
         <div class="Alerts" id="tabcontents">
           <h2 class="main-heading">Alerts</h2>
@@ -63,6 +91,12 @@
             <img src="Alert images/info.jpg" />
             <span>This is an info-alert</span>
           </div>
+          <div class="center-heading-float">
+            Above are the Alerts, which can be used to give an
+            Alert-notification on a website. Below is the Html code I used to
+            implement them.
+          </div>
+          <img class="html-image" src="code/Alerts-html.png" />
         </div>
         <div class="badges" id="tabcontents">
           <h2 class="main-heading">Badges</h2>
@@ -73,16 +107,32 @@
           <div class="badge placeholder">
             <img src="New folder/placeholder.png" />
           </div>
+          <div class="center-heading-float">
+            Above are the Badges, which can be used in as badges or placeholder
+            on a website. Below is the html code i used to implement them
+          </div>
+          <img class="html-image" src="code/badge-html.png" />
         </div>
         <div class="buttons" id="tabcontents">
           <h2 class="main-heading">Button</h2>
+          <div class="center-heading">Primary button</div>
           <button class="button-primary">PRIMARY-BUTTON</button>
+          <div class="center-heading">Link button</div>
           <button class="button-link">LINK</button>
+          <div class="center-heading">Icon button</div>
           <button class="button-icon fa fa-cart-plus"></button>
+          <div class="center-heading">Floating Action button</div>
           <button class="button-floating fa fa-plus"></button>
+          <div class="center-heading-float">
+            Above are the buttons , which can be used in website for primary
+            buttons, link buttons, icon buttons and floating buttons. Below is
+            the Html code i used to implement them
+          </div>
+          <img class="html-image" src="code/button-html.png" />
         </div>
         <div class="cards" id="tabcontents">
-          <h2 class="main-heading space">Cards</h2>
+          <h2 class="main-heading ">Cards</h2>
+          <div class="center-heading">Card with Badges</div>
           <div class="card-badge">
             <div class="badge placeholder">
               <img src="New folder/placeholder.png" />
@@ -95,6 +145,7 @@
               </div>
             </div>
           </div>
+          <div class="center-heading">Card with dismiss</div>
           <div class="card Dismiss">
             <button class="dismiss">X</button>
             <img src="Avatar images/spongbob.png" />
@@ -103,6 +154,7 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
           </div>
+          <div class="center-heading">card with text overlay</div>
           <div class="card textoverlay">
             <span class="overlay">This test overlays on image</span>
             <img src="Avatar images/patrik.png" />
@@ -111,6 +163,7 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
           </div>
+          <div class="center-heading">Text only card</div>
           <div class="card textonly">
             <span>Text only card</span>
             <div>
@@ -118,26 +171,37 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
           </div>
+          <div class="center-heading">Vertical card</div>
           <div class="card vertical">This card is vertical</div>
+          <div class="center-heading">horizontal card</div>
           <div class="card horizontal">This card is horizontal</div>
+          <div class="center-heading-float">Above are the card, which can be used in a website. There are a variety of cards such as card with a dissmiss and text overlay and many more. below is the html code which I used to implement them.</div>
+          <img class="html-image" src="code/cards-html.png"/>
         </div>
         <div class="images" id="tabcontents">
           <h2 class="main-heading">Images</h2>
+          <div class="center-heading">Responsive Image</div>
           <div class="responsive-image">
             <img src="Avatar images/whale.jpg" />
             <div>This is an reponsive image fitting the parent div.</div>
           </div>
+          <div class="center-heading">Round Image</div>
           <img class="round-image" src="Avatar images/handsome-patrik.jpg" />
+          <div class="center-heading-float">Above are the Images, which can be used in building of website.below is the html code I used to implement them</div>
+          <img class="html-image" src="code/image-html.png"/>
         </div>
         <div class="input" id="tabcontents">
           <h2 class="main-heading">Input</h2>
+          <div class="center-heading">Text-Box</div>
           <input class="textbox" placeholder="Input Text" />
+          <div class="center-heading">Validation Input</div>
           <div class="validation-input">
             <span class="error">Error</span>
             <input class="textbox" placeholder="Input Text" />
             <div>Input Doesn't match</div>
           </div>
-          
+          <div class="center-heading-float">Above are the inputs, which can used in building of a web site. Below is the html code which I used to implement them.</div>
+          <img class="html-image" src="code/input-html.png"/>
         </div>
         <div class="lists" id="tabcontents">
           <h2 class="main-heading">Lists</h2>
@@ -172,9 +236,12 @@
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </li>
           </div>
+          <div class="center-heading-float">Above are the list, which can be used in building of a web site . They can be used for simple list and notifications</div>
+          <img class="html-image" src="code/list-html.png"/>
         </div>
         <div class="navigation" id="tabcontents">
           <h2 class="main-heading">Desktop navigation</h2>
+      
           <nav class="desktop-navigation">
             <a href="/"><img src="New folder/placeholder.png" /></a>
             <div class="search">
@@ -183,6 +250,8 @@
             </div>
             <a href="/"><img src="button images/setting.png" /></a>
           </nav>
+          <div class="center-heading-float">Above is a Navigation bar which can be used in build a website. Below is its html code.</div>
+          <img class="html-image" src="code/navigation-html.png"/>
         </div>
         <div class="Modal" id="tabcontents">
           <h2 class="main-heading">Modal</h2>
@@ -193,39 +262,47 @@
               eiusmod tempor
             </p>
           </div>
+          <div class="center-heading-float">Above is a basic Modal, which can be used in build of a website. Below is its html code. </div>
+          <img class="html-image" src="code/modal-html.png"/>
         </div>
         <div class="Ratings" id="tabcontents">
           <h2 class="main-heading">Ratings</h2>
+          <div class="center-heading">One star rating</div>
           <div class="rating">
             <img src="button images/star.png" />
           </div>
-
+          <div class="center-heading">Two star rating</div>
           <div class="rating">
             <img src="button images/star.png" />
             <img src="button images/star.png" />
           </div>
-
-          <div class="rating">
-            <img src="button images/star.png" />
-            <img src="button images/star.png" />
-            <img src="button images/star.png" />
-          </div>
+          <div class="center-heading">Three star rating</div>
           <div class="rating">
             <img src="button images/star.png" />
             <img src="button images/star.png" />
             <img src="button images/star.png" />
-            <img src="button images/star.png" />
           </div>
+          <div class="center-heading">four star rating</div>
           <div class="rating">
             <img src="button images/star.png" />
             <img src="button images/star.png" />
             <img src="button images/star.png" />
             <img src="button images/star.png" />
+          </div>
+          <div class="center-heading">Five star rating</div>
+          <div class="rating">
+            <img src="button images/star.png" />
+            <img src="button images/star.png" />
+            <img src="button images/star.png" />
+            <img src="button images/star.png" />
             <img src="button images/star.png" />
           </div>
+          <div class="center-heading-float">Above are the ratings, which could be used to build a rating system on a website. Below is its html code.</div>
+          <img class="html-image" src="code/rating-html.png"/>
         </div>
         <div class="grids" id="tabcontents">
           <h2 class="main-heading">Grids</h2>
+          <div class="center-heading">Grid of Two columns</div>
           <div class="grid two">
             <div>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -237,6 +314,7 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
           </div>
+          <div class="center-heading">Grid of Three columns</div>
           <div class="grid three">
             <div>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -252,36 +330,51 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
           </div>
+          <div class="center-heading-float">Above are the Grids, which can be used to build a website. They can be used to divide space for components also. Below is the html code of them.</div>
+          <img class="html-image" src="code/grid-html (2).png"/>
         </div>
         <div class="text-utilities" id="tabcontents">
           <h2 class="main-heading">Headings and Texts</h2>
           <div class="large-heading">This is a large heading</div>
           <div class="medium-heading">This is a medium heading</div>
           <div class="small-heading">This is small heading</div>
+          <div class="center-heading">Small text</div>
           <div class="small-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
+          <div class="center-heading">Grey text</div>
           <div class="grey-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
+          <div class="center-heading">Center text</div>
           <div class="center-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
+          <div class="center-heading-float">Above are the various Headings and Texts, which can be used in building of a website. Below is the Html code used to implement them</div>
+          <img class="html-image" src="code/headings-html.png"/>
+          
         </div>
 
         <div class="snack-bars" id="tabcontents">
           <h2 class="main-heading">Snackbar</h2>
+          <div class="center-heading"> Snack-bar button</div>
+          
           <div class="open-snackbar">
             <button>OPEN SNACKBAR</button>
           </div>
+          <div class="center-heading">Snack-bar</div>
+
           <div class="snackbar">
             <div class="info">some information</div>
             <button class="undo">UNDO</button>
             <button class="close">X</button>
           </div>
+          <div class="center-heading-float">Above is a basic Snack-bar which could be used in building a website. Below is its html code</div>
+          <img class="html-image" src="code/snack-bar-html.png"/>
+          
         </div>
       </div>
     </div>
