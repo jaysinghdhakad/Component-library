@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
 :root {
-  --red-color:#3981d9 ;
+  --red-color: #3981d9;
 }
 body {
   width: 700px;
-  font-family: 'Pangolin', cursive;
+  font-family: "Pangolin", cursive;
 }
 .header {
   grid-area: hd;
@@ -37,7 +37,7 @@ body {
   border-radius: 50%;
   margin: 1rem auto;
 }
- .Alert {
+.Alert {
   display: flex;
   align-items: center;
   margin: 0.5rem 2rem;
@@ -121,7 +121,7 @@ body {
   background-color: transparent;
   margin: 1rem auto;
 }
-.center-heading-float{
+.center-heading-float {
   margin-top: 3rem;
   text-align: center;
 }
@@ -319,12 +319,10 @@ body {
 }
 .rating {
   text-align: center;
-  
 }
 .rating > img {
   width: 30px;
- border-radius: 50%;
- 
+  border-radius: 50%;
 }
 .grid > div {
   border: 1px solid grey;
@@ -420,11 +418,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:10px;
+  padding: 10px;
 }
 .tab {
   margin-top: 1rem;
-  background-color:#f0f4f7;
+  background-color: #f0f4f7;
   border-radius: 8px;
   border: none;
 }
@@ -434,22 +432,20 @@ body {
 .center-heading {
   margin-top: 1rem;
   text-align: center;
-  
 }
-.sidebar-image{
-  margin-top:3rem;
-  width:100%;
-  height:auto;
-  padding:2px;
+.sidebar-image {
+  margin-top: 3rem;
+  width: 100%;
+  height: auto;
+  padding: 2px;
 }
-.Active{
-  
+.Active {
   background-color: #5f93c2;
   border: 2.5px solid black;
   color: white;
 }
-.html-image{
-  width:100%;
- display:block;
- margin: 2rem auto;
+.html-image {
+  width: 100%;
+  display: block;
+  margin: 2rem auto;
 }
