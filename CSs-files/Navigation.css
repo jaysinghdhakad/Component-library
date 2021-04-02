@@ -1,0 +1,24 @@
+.desktop-navigation {
+    border: 1px solid grey;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .desktop-navigation img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .desktop-navigation > .search {
+    display: flex;
+    align-items: center;
+  }
+  .search > button {
+    height: 2rem;
+  }
+  .search > input {
+    border: 1px solid black;
+    height: 1.75rem;
+    text-align: center;
+  }

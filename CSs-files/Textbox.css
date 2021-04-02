@@ -1,0 +1,35 @@
+.textbox {
+    display: block;
+    margin: 1rem auto;
+    height: 2.3rem;
+    padding: 6px;
+    width: 10rem;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 1px 2px grey;
+  }
+  .validation-input {
+    padding: none;
+    width: 11rem;
+    display: block;
+    margin: 0rem auto;
+    margin-top: 1rem;
+    position: relative;
+  }
+  .validation-input > .textbox {
+    border: 1px solid red;
+    box-shadow: 1px 2px red;
+    margin: 0 0;
+  }
+  .validation-input > .error {
+    color: red;
+    position: absolute;
+    top: -0.5rem;
+    background-color: white;
+  }
+  .validation-input > div {
+    margin-top: 5px;
+    text-align: center;
+    color: red;
+  }

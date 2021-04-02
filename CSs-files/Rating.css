@@ -1,0 +1,7 @@
+.rating {
+    text-align: center;
+  }
+  .rating > img {
+    width: 30px;
+    border-radius: 50%;
+  }

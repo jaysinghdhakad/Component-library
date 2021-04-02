@@ -1,0 +1,24 @@
+.large-heading {
+    margin: 1rem 0.5rem;
+    font-size: 30px;
+  }
+  .medium-heading {
+    margin: 1rem 0.5rem;
+    font-size: 25px;
+  }
+  .small-heading {
+    margin: 1rem 0.5rem;
+    font-size: 20px;
+  }
+  .small-text {
+    margin: 1rem 0.5rem;
+    font-size: 12px;
+  }
+  .grey-text {
+    margin: 1rem 0.5rem;
+    color: grey;
+  }
+  .center-text {
+    margin: 1rem 0.5rem;
+    text-align: center;
+  }

@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: "Pangolin", cursive;
+}
+.site-nav {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  background-color: #1e1e1e;
+}
+.site-nav > .nav-logo {
+  flex-grow: 5;
+  height: 4rem;
+}
+.site-nav > .nav-links {
+  flex-grow: 2;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-links > a {
+  flex-grow: 1;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+.nav-links > button {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  display: none;
+}
+
+.nav-logo > div {
+  font-size: 3rem;
+  display: block;
+  margin: 0.35rem 1rem;
+  color: white;
+}
+/* .site-nav{
+    display:flex;
+    width: 100%;
+    height: 4rem;
+    background-color: #1e1e1e;
+    position: fixed;
+    top:0;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius:  8px;
+}
+.site-nav > .nav-logo{
+    width:70%;
+    height:2rem;
+   
+}
+.site-nav > .nav-links{
+    width:30%;
+    height:4rem;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-links > a{
+   flex-grow: 1;
+   text-align: center;
+   text-decoration: none;
+   font-size: 1.5rem;
+   color:white;
+
+}
+
+.nav-logo > div{
+font-size: 3rem;
+display:block;
+margin: 0.35rem 1rem;
+color: white;
+} */
+.site-image {
+  height: 20%;
+  width: 40%;
+  margin: 8rem auto;
+}
+.site-image > img {
+  width: 100%;
+  height: auto;
+}
+.site-introduction {
+  margin-top: 15rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.site-button {
+  display: block;
+  margin: 2rem auto;
+  font-family: "Pangolin", cursive;
+  background-color: rgb(206, 201, 201);
+  border: none;
+
+  padding: 8px;
+  border-radius: 35%;
+  font-size: 2rem;
+  outline: none;
+}

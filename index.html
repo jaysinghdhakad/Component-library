@@ -9,52 +9,47 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CssStyles.css" />
     <link rel="stylesheet" href="style-desktop.css" />
   </head>
   <body>
     <div class="wrapper">
-      <div class="header"></div>
+      <div class="nav-space">
+        <nav class="site-nav">
+          <div class="nav-logo"><div>EMERALD UI</div></div>
+
+          <div class="nav-links">
+            <a href="/landingpage.html">Home</a>
+            <a href="/">docs</a>
+            <a href="/">Github</a>
+            <button
+              onClick="showStyle(event,'sidebar')"
+              class="fa fa-align-justify"
+            ></button>
+          </div>
+        </nav>
+      </div>
+
       <div class="sidebar">
-        <img class="sidebar-image" src="button images/components.png" />
-
         <div class="tabs">
-          <button class="tab" onclick="showStyle(event,'Avatars')">
-            Avatars
-          </button>
-
-          <button class="tab" onclick="showStyle(event,'Alerts')">
-            Alerts
-          </button>
-          <button class="tab" onclick="showStyle(event,'badges')">
-            Badges
-          </button>
-          <button class="tab" onclick="showStyle(event,'buttons')">
-            Button
-          </button>
-          <button class="tab" onclick="showStyle(event,'cards')">Cards</button>
-          <button class="tab" onclick="showStyle(event,'images')">
-            Images
-          </button>
-          <button class="tab" onclick="showStyle(event,'input')">Inputs</button>
-          <button class="tab" onclick="showStyle(event,'lists')">Lists</button>
-          <button class="tab" onclick="showStyle(event,'navigation')">
-            Desktop navigation
-          </button>
-          <button class="tab" onclick="showStyle(event,'Modal')">Modal</button>
-          <button class="tab" onclick="showStyle(event,'Ratings')">
-            Rating
-          </button>
-          <button class="tab" onclick="showStyle(event,'grids')">Grids</button>
-          <button class="tab" onclick="showStyle(event,'text-utilities')">
-            Heading and Texts
-          </button>
-          <button class="tab" onclick="showStyle(event,'snack-bars')">
-            Snack-bar
-          </button>
+          <a class="tab" href="#Avatars">Avatar</a>
+          <a class="tab" href="#Alerts">Alerts</a>
+          <a class="tab" href="#badges">Badges</a>
+          <a class="tab" href="#buttons">Buttons</a>
+          <a class="tab" href="#cards">Cards</a>
+          <a class="tab" href="#images">Images</a>
+          <a class="tab" href="#input">Input</a>
+          <a class="tab" href="#lists">Lists</a>
+          <a class="tab" href="#navigation">Navigation</a>
+          <a class="tab" href="#Modal">Modal</a>
+          <a class="tab" href="#Ratings">Rating</a>
+          <a class="tab" href="#grids">Grids</a>
+          <a class="tab" href="#text-utilities">Text-utilities</a>
+          <a class="tab" href="#snackbar">Snack-bar</a>
         </div>
       </div>
-      <div class="body">
+
+      <div class="content">
         <div class="introduction">
           <h2 class="main-heading">Welcome to my Component Library</h2>
           <div class="center-heading">
@@ -62,81 +57,154 @@
             the buttons on the left side to view components
           </div>
         </div>
+        <a class="tab-links" name="Avatars"></a>
         <div class="Avatars" id="tabcontents">
           <h2 class="main-heading">Avatars</h2>
-          <img class="Avatar" src="Avatar images/handsome-patrik.jpg" />
-          <img class="Avatar" src="Avatar images/spongbob.png" />
-          <img class="Avatar" src="Avatar images/plankton.png" />
-          <img class="Avatar" src="Avatar images/patrik.png" />
           <div class="center-heading-float">
-            Above are the Avatars which can be used on websites for profile.
+            Below are the Avatars which can be used on websites for profile.
             Below is the html code, which I used to implement them here
           </div>
-          <img class="html-image" src="code/Avatar-html.png" />
+          <img class="avatar" src="Avatar images/handsome-patrik.jpg" />
+          <img class="avatar" src="Avatar images/spongbob.png" />
+          <img class="avatar" src="Avatar images/plankton.png" />
+          <img class="avatar" src="Avatar images/patrik.png" />
+         
+          <div class="copy-code" ><div><pre id="avatar" >  &lt;img class="avatar" src="Avatar images/handsome-patrik.jpg" &gt;</pre></div>
+            <button class="copy-button" onClick="copyText('avatar')">Copy code</button>
+
+           
+         </div>
+          
+         
         </div>
         <div class="Alerts" id="tabcontents">
+          <a class="tab-links" name="Alerts"></a>
           <h2 class="main-heading">Alerts</h2>
-          <div class="Alert success">
+          <div class="center-heading-float">
+            Below are the Alerts, which can be used to give an
+            Alert-notification on a website. Below them is there Html code I used to
+            implement them.
+          </div>
+          <div class="alert success">
             <img src="Alert images/success.jpg" />
             <span>This is a success-alert</span>
           </div>
-          <div class="Alert failure">
+          <div class="copy-code" ><div><pre id="alertSucces" >  &lt;div class="alert success"&gt;
+            &lt;img src="Alert images/success.jpg" /&gt;
+            &lt;span&gt;This is a success-alert&lt;/span&gt;
+            &lt;/div&gt;</pre></div>
+            <button class="copy-button" onClick="copyText('alertSucces')">Copy code</button>
+            </div>
+          <div class="alert failure">
             <img src="Alert images/faluire.webp" />
             <span>This is a failure-alert</span>
           </div>
-          <div class="Alert warning">
+          <div class="copy-code" ><div><pre id="alertFail" >  &lt;div class="alert failure"&gt;
+            &lt;img src="Alert images/faluire.jpg" /&gt;
+            &lt;span&gt;This is a failure-alert&lt;/span&gt;
+            &lt;/div&gt;</pre></div>
+            <button class="copy-button" onClick="copyText('alertFail')">Copy code</button>
+            </div>
+          <div class="alert warning">
             <img src="Alert images/warrning.webp" />
             <span>This is a warning-alert</span>
           </div>
-          <div class="Alert info">
+          <div class="copy-code" ><div><pre id="alertWar" >  &lt;div class="alert warning"&gt;
+            &lt;img src="Alert images/warrning.jpg" /&gt;
+            &lt;span&gt;This is a warning-alert&lt;/span&gt;
+            &lt;/div&gt;</pre></div>
+            <button class="copy-button" onClick="copyText('alertWar')">Copy code</button>
+            </div>
+          <div class="alert info">
             <img src="Alert images/info.jpg" />
             <span>This is an info-alert</span>
           </div>
-          <div class="center-heading-float">
-            Above are the Alerts, which can be used to give an
-            Alert-notification on a website. Below is the Html code I used to
-            implement them.
-          </div>
-          <img class="html-image" src="code/Alerts-html.png" />
+          <div class="copy-code" ><div><pre id="alertInfo" >  &lt;div class="alert info"&gt;
+            &lt;img src="Alert images/info.jpg" /&gt;
+            &lt;span&gt;This is a info-alert&lt;/span&gt;
+            &lt;/div&gt;</pre></div>
+            <button class="copy-button" onClick="copyText('alertInfo')">Copy code</button>
+            </div>
+          
+          
         </div>
         <div class="badges" id="tabcontents">
+          <a name="badges"></a>
           <h2 class="main-heading">Badges</h2>
-
-          <div class="badge cart">
-            <img src="New folder/cart.png" />
-          </div>
-          <div class="badge placeholder">
-            <img src="New folder/placeholder.png" />
-          </div>
           <div class="center-heading-float">
-            Above are the Badges, which can be used in as badges or placeholder
-            on a website. Below is the html code i used to implement them
+          Below are the Badges, which can be used in as badges or placeholder
+            on a website. Below is the html code I used to implement them
           </div>
-          <img class="html-image" src="code/badge-html.png" />
-        </div>
+          <div class="badge cart">
+            <img src="Badges/cart.png" />
+          </div>
+          <div class="copy-code" ><div><pre id="badgeCart" > 
+            &lt;div class="badge cart">
+               &lt;img src="Badges/cart.png" /&gt;
+               &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('badgeCart')">Copy code</button>
+       </div>
+          <div class="badge placeholder">
+            <img src="Badges/placeholder.png" />
+          </div>
+          <div class="copy-code" ><div><pre id="badgePlaceholder" > 
+            &lt;div class="badge placeholder">
+               &lt;img src="Badges/placeholder.png" /&gt;
+               &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('badgePlaceholder')">Copy code</button>
+           </div>
+         
+         
+          &lt;
         <div class="buttons" id="tabcontents">
+          <a name="buttons"></a>
           <h2 class="main-heading">Button</h2>
+          <div class="center-heading-float">
+            Below are the buttons , which can be used in website for primary
+            buttons, link buttons, icon buttons and floating buttons. Below Them is
+            the Html code I used to implement them
+          </div>
           <div class="center-heading">Primary button</div>
+         
+          
           <button class="button-primary">PRIMARY-BUTTON</button>
+          <div class="copy-code" ><div><pre id="buttonPrimary" > 
+            &lt;button class="button-primary">PRIMARY-BUTTON&lt;/button&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('buttonPrimary')">Copy code</button>
+           </div>
           <div class="center-heading">Link button</div>
           <button class="button-link">LINK</button>
+          <div class="copy-code" ><div><pre id="buttonLink" > 
+            &lt;button class="button-link">LINK&lt;/button&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('buttonLink')">Copy code</button>
+         </div>
           <div class="center-heading">Icon button</div>
           <button class="button-icon fa fa-cart-plus"></button>
+          <div class="copy-code" ><div><pre id="buttonIcon" > 
+            &lt;button class="button-icon fa fa-cart-plus">&lt;/button&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('buttonIcon')">Copy code</button>
+           </div>
           <div class="center-heading">Floating Action button</div>
           <button class="button-floating fa fa-plus"></button>
-          <div class="center-heading-float">
-            Above are the buttons , which can be used in website for primary
-            buttons, link buttons, icon buttons and floating buttons. Below is
-            the Html code i used to implement them
-          </div>
-          <img class="html-image" src="code/button-html.png" />
+          <div class="copy-code" ><div><pre id="buttonFloating" > 
+            &lt;button class="button-floating fa fa-plus">&lt;/button&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('buttonFloating')">Copy code</button>
+           </div>
+         
+          
         </div>
         <div class="cards" id="tabcontents">
+          <a name="cards"></a>
           <h2 class="main-heading">Cards</h2>
+          <div class="center-heading-float">
+          Below are the card, which can be used in a website. There are a
+          variety of cards such as card with a dissmiss and text overlay and
+          many more. Below them is the html code which I used to implement them.
+        </div>
           <div class="center-heading">Card with Badges</div>
           <div class="card-badge">
             <div class="badge placeholder">
-              <img src="New folder/placeholder.png" />
+              <img src="Badges/placeholder.png" />
             </div>
             <div class="text">
               <span>@username</span>
@@ -146,6 +214,21 @@
               </div>
             </div>
           </div>
+          <div class="copy-code" ><div><pre id="cardBadge" > 
+            &lt;div class="card-badge"&gt;
+            &lt;div class="badge placeholder"&gt;
+            &lt;img src="Badges/placeholder.png" /&gt;
+            &lt;/div&gt;
+            &lt;div class="text"&gt;
+            &lt;span&gt;@username &lt;/span&gt;
+            &lt;div class="post"&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('cardBadge')">Copy code</button>
+           </div>
           <div class="center-heading">Card with dismiss</div>
           <div class="card Dismiss">
             <button class="dismiss">X</button>
@@ -155,6 +238,17 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
           </div>
+          <div class="copy-code" ><div><pre id="cardDismiss" >  &lt;div class="card Dismiss"&gt;
+            &lt;button class="dismiss"&gt;X&lt;/button&gt;
+            &lt;img src="Avatar images/spongbob.png" /&gt;
+            &lt;div class="post"&gt;
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              &lt;/div&gt;
+              &lt;/div&gt;
+            </pre></div>
+           <button class="copy-button" onClick="copyText('cardDismiss')">Copy code</button>
+           </div>
           <div class="center-heading">card with text overlay</div>
           <div class="card textoverlay">
             <span class="overlay">This test overlays on image</span>
@@ -164,58 +258,115 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
           </div>
+          <div class="copy-code" ><div><pre id="cardOverlay" >   &lt;div class="card textoverlay"&gt;
+            &lt;span class="overlay"&gt;This test overlays on image &lt;/span&gt;
+            &lt;img src="Avatar images/patrik.png" /&gt;
+            &lt;div class="post"&gt;
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              /div&gt;
+              &lt;/div&gt;
+            </pre></div>
+           <button class="copy-button" onClick="copyText('cardOverlay')">Copy code</button>
+           </div>
           <div class="center-heading">Text only card</div>
           <div class="card textonly">
-            <span>Text only card</span>
+            <span>Text only card</span>&lt;
             <div>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
           </div>
+          <div class="copy-code" ><div><pre id="cardTextonly" >  &lt;div class="card textonly"&gt;
+            &lt;span&gt;Text only card&lt;/span&gt;
+            &lt;div&gt;
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              &lt;/div&gt;
+              &lt;/div&gt;
+            </pre></div>
+           <button class="copy-button" onClick="copyText('cardTextonly')">Copy code</button>
+           </div>
           <div class="center-heading">Vertical card</div>
           <div class="card vertical">This card is vertical</div>
+          <div class="copy-code" ><div><pre id="cardVertical" >  
+            &lt;div class="card vertical"&gt; This card is vertical&lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('cardVertical')">Copy code</button>
+           </div>
           <div class="center-heading">horizontal card</div>
           <div class="card horizontal">This card is horizontal</div>
-          <div class="center-heading-float">
-            Above are the card, which can be used in a website. There are a
-            variety of cards such as card with a dissmiss and text overlay and
-            many more. below is the html code which I used to implement them.
-          </div>
-          <img class="html-image" src="code/cards-html.png" />
+          <div class="copy-code" ><div><pre id="cardVertical" >  
+            &lt;div class="card horizontal"&gt;This card is horizontal&lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('cardVertical')">Copy code</button>
+        </div>
+       
+         
         </div>
         <div class="images" id="tabcontents">
+          <a name="images"></a>
           <h2 class="main-heading">Images</h2>
+          <div class="center-heading-float">
+            Below are the Images, which can be used in building of website.Below Them
+            is the html code I used to implement them
+          </div>
           <div class="center-heading">Responsive Image</div>
           <div class="responsive-image">
             <img src="Avatar images/whale.jpg" />
             <div>This is an reponsive image fitting the parent div.</div>
           </div>
+          <div class="copy-code" ><div><pre id="imageResponsive" >  
+            &lt;div class="responsive-image"&gt;
+            &lt;img src="Avatar images/whale.jpg" /&gt;
+            &lt;div&gt;This is an reponsive image fitting the parent div. &lt;/div&gt;
+            &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('imageResponsive')">Copy code</button>
+        </div>
           <div class="center-heading">Round Image</div>
           <img class="round-image" src="Avatar images/handsome-patrik.jpg" />
-          <div class="center-heading-float">
-            Above are the Images, which can be used in building of website.below
-            is the html code I used to implement them
-          </div>
-          <img class="html-image" src="code/image-html.png" />
+          <div class="copy-code" ><div><pre id="imageRound" >  
+            &lt;img class="round-image" src="Avatar images/handsome-patrik.jpg" /&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('imageRound')">Copy code</button>
+        </div>
+         
+          
         </div>
         <div class="input" id="tabcontents">
+          <a name="input"></a>
           <h2 class="main-heading">Input</h2>
+          <div class="center-heading-float">
+            Below are the inputs, which can used in building of a web site.
+            Below Them is the html code which I used to implement them.
+          </div>
           <div class="center-heading">Text-Box</div>
           <input class="textbox" placeholder="Input Text" />
+          <div class="copy-code" ><div><pre id="textbox" >  
+            &lt;input class="textbox" placeholder="Input Text" /&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('textbox')">Copy code</button>
+        </div>
           <div class="center-heading">Validation Input</div>
           <div class="validation-input">
             <span class="error">Error</span>
             <input class="textbox" placeholder="Input Text" />
             <div>Input Doesn't match</div>
           </div>
-          <div class="center-heading-float">
-            Above are the inputs, which can used in building of a web site.
-            Below is the html code which I used to implement them.
-          </div>
-          <img class="html-image" src="code/input-html.png" />
+          <div class="copy-code" ><div><pre id="validationTextbox" >  
+            &lt;div class="validation-input"&gt;
+            &lt;span class="error">Error&lt;/span&gt;
+            &lt;input class="textbox" placeholder="Input Text" /&gt;
+            &lt;div>Input Doesn't match&lt;/div&gt;
+            &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('validationTextbox')">Copy code</button>
+        </div>
+          
+         
         </div>
         <div class="lists" id="tabcontents">
+          <a name="lists"></a>
           <h2 class="main-heading">Lists</h2>
+          <div class="center-heading-float">
+            Below are the list, which can be used in building of a web site .
+            They can be used for simple list and notifications
+          </div>
           <h2 class="main-heading">Spaced list</h2>
           <div class="list spaced">
             <li>Item 1</li>
@@ -224,6 +375,18 @@
             <li>Item 4</li>
             <li>Item 5</li>
           </div>
+          <div class="copy-code" ><div><pre id="listSpaced" >  
+            &lt;div class="list spaced"&gt;
+            &lt;li>Item 1 &lt;/li&gt;
+            &lt;li>Item 2 &lt;/li&gt;
+            &lt;li>Item 3 &lt;/li&gt;
+            &lt;li>Item 4 &lt;/li&gt;
+            &lt;li>Item 5 &lt;/li&gt;
+            &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('listSpaced')">Copy code</button>
+        </div>
+          
+         
           <h2 class="main-heading">Stacked list</h2>
           <div class="list stacked">
             <li>
@@ -247,31 +410,71 @@
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </li>
           </div>
-          <div class="center-heading-float">
-            Above are the list, which can be used in building of a web site .
-            They can be used for simple list and notifications
-          </div>
-          <img class="html-image" src="code/list-html.png" />
+          <div class="copy-code" ><div><pre id="listStacked" >  
+            &lt;div class="list stacked"&gt;
+            &lt;li&gt;
+              Item 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              &lt;/li&gt;
+              &lt;li&gt;
+              Item 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              &lt;/li&gt;
+              &lt;li&gt;
+              Item 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              &lt;/li&gt;
+              &lt;li&gt;
+              Item 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              &lt;/li&gt;
+              &lt;li&gt;
+              Item 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              &lt;/li&gt;
+              &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('listStacked')">Copy code</button>
+        </div>
+         
+       
         </div>
         <div class="navigation" id="tabcontents">
+          <a name="navigation"></a>
           <h2 class="main-heading">Desktop navigation</h2>
-
+          <div class="center-heading-float">
+            Below is a Navigation bar which can be used in build a website.
+            Below it is its html code.
+          </div>
           <nav class="desktop-navigation">
-            <a href="/"><img src="New folder/placeholder.png" /></a>
+            <a href="/"><img src="Badges/placeholder.png" /></a>
             <div class="search">
               <input placeholder="search" />
               <button class="fa fa-search"></button>
             </div>
             <a href="/"><img src="button images/setting.png" /></a>
           </nav>
-          <div class="center-heading-float">
-            Above is a Navigation bar which can be used in build a website.
-            Below is its html code.
-          </div>
-          <img class="html-image" src="code/navigation-html.png" />
+          <div class="copy-code" ><div><pre id="Modal" >  
+            &lt;nav class="desktop-navigation"&gt;
+            &lt;a href="/"&gt;&lt;img src="Badges/placeholder.png" /&gt;&lt;/a&gt;
+            &lt;div class="search"&gt;
+            &lt;input placeholder="search" /&gt;
+            &lt;button class="fa fa-search"&gt;&lt;/button&gt;
+            &lt;/div&gt;  
+            &lt;a href="/"&gt;&lt;img src="button images/setting.png" /&gt;&lt;/a&gt;
+            &lt;/nav&gt;
+          </pre></div>
+           <button class="copy-button" onClick="copyText('Modal')">Copy code</button>
+        </div>
+         
+          
         </div>
         <div class="Modal" id="tabcontents">
+          <a name="Modal"></a>
           <h2 class="main-heading">Modal</h2>
+          <div class="center-heading-float">
+            Below is a basic Modal, which can be used in build of a website.
+            Below it is its html code.
+          </div>
           <div class="modal">
             <span>Heading</span>
             <p>
@@ -279,29 +482,62 @@
               eiusmod tempor
             </p>
           </div>
-          <div class="center-heading-float">
-            Above is a basic Modal, which can be used in build of a website.
-            Below is its html code.
-          </div>
-          <img class="html-image" src="code/modal-html.png" />
+          <div class="copy-code" ><div><pre id="Modal" >  
+            &lt;div class="modal"&gt;
+            &lt;span&gt;Heading&lt;/span&gt;
+            &lt;p&gt;
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor
+              &lt;/p&gt;
+              &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('Modal')">Copy code</button>
+        </div>
+         
+         
         </div>
         <div class="Ratings" id="tabcontents">
+          <a name="Ratings"></a>
           <h2 class="main-heading">Ratings</h2>
+          <div class="center-heading-float">
+            Below are the ratings, which could be used to build a rating system
+            on a website. Below Them is there  html code.
+          </div>
           <div class="center-heading">One star rating</div>
           <div class="rating">
             <img src="button images/star.png" />
           </div>
+          <div class="copy-code" ><div><pre id="RatingOnestar" >  
+            &lt;div class="rating"&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('RatingOnestar')">Copy code</button>
+        </div>
           <div class="center-heading">Two star rating</div>
           <div class="rating">
             <img src="button images/star.png" />
             <img src="button images/star.png" />
           </div>
+          <div class="copy-code" ><div><pre id="RatingTwostar" >  
+            &lt;div class="rating"&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('RatingTwostar')">Copy code</button>
+        </div>
           <div class="center-heading">Three star rating</div>
           <div class="rating">
             <img src="button images/star.png" />
             <img src="button images/star.png" />
             <img src="button images/star.png" />
           </div>
+          <div class="copy-code" ><div><pre id="RatingThreestar" >  
+            &lt;div class="rating"&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('RatingThreestar')">Copy code</button>
+        </div>
           <div class="center-heading">four star rating</div>
           <div class="rating">
             <img src="button images/star.png" />
@@ -309,6 +545,15 @@
             <img src="button images/star.png" />
             <img src="button images/star.png" />
           </div>
+          <div class="copy-code" ><div><pre id="Ratingfourstar" >  
+            &lt;div class="rating"&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('Ratingfourstar')">Copy code</button>
+        </div>
           <div class="center-heading">Five star rating</div>
           <div class="rating">
             <img src="button images/star.png" />
@@ -317,14 +562,27 @@
             <img src="button images/star.png" />
             <img src="button images/star.png" />
           </div>
-          <div class="center-heading-float">
-            Above are the ratings, which could be used to build a rating system
-            on a website. Below is its html code.
-          </div>
-          <img class="html-image" src="code/rating-html.png" />
+          <div class="copy-code" ><div><pre id="Ratingfivestar" >  
+            &lt;div class="rating"&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;img src="button images/star.png" /&gt;
+            &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('Ratingfivestar')">Copy code</button>
+        </div>
+         
+         
         </div>
         <div class="grids" id="tabcontents">
+          <a name="grids"></a>
           <h2 class="main-heading">Grids</h2>
+          <div class="center-heading-float">
+            Below are the Grids, which can be used to build a website. They can
+            be used to divide space for components also. Below them is there html code
+            of them.
+          </div>
           <div class="center-heading">Grid of Two columns</div>
           <div class="grid two">
             <div>
@@ -337,6 +595,20 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
           </div>
+          <div class="copy-code" ><div><pre id="gridTwo" >  
+            &lt;div class="grid two"&gt;
+            &lt;div&gt;
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              &lt;/div&gt;
+
+              &lt;div&gt;
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              &lt;/div&gt;
+              &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('gridTwo')">Copy code</button>
+        </div>
           <div class="center-heading">Grid of Three columns</div>
           <div class="grid three">
             <div>
@@ -353,62 +625,131 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
           </div>
-          <div class="center-heading-float">
-            Above are the Grids, which can be used to build a website. They can
-            be used to divide space for components also. Below is the html code
-            of them.
-          </div>
-          <img class="html-image" src="code/grid-html (2).png" />
+          <div class="copy-code" ><div><pre id="gridThree" >  
+            &lt;div class="grid two"&gt;
+            &lt;div&gt;
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              &lt;/div&gt;
+              &lt;div&gt;
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              &lt;/div&gt;
+              &lt;div&gt;
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              &lt;/div&gt;
+              &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('gridThree')">Copy code</button>
+        </div>
+         
+         
         </div>
         <div class="text-utilities" id="tabcontents">
+          <a name="text-utilities"></a>
           <h2 class="main-heading">Headings and Texts</h2>
+          <div class="center-heading-float">
+            Below are the various Headings and Texts, which can be used in
+            building of a website. Below them is the Html code used to implement them
+          </div>
           <div class="large-heading">This is a large heading</div>
+          <div class="copy-code" ><div><pre id="largeHeading" >  
+            &lt;div class="large-heading"&gt;This is a large heading &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('largeHeading')">Copy code</button>
+        </div>
+         
           <div class="medium-heading">This is a medium heading</div>
+          <div class="copy-code" ><div><pre id="mediumHeading" >  
+            &lt;div class="medium-heading"&gt;This is a medium heading&lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('mediumHeading')">Copy code</button>
+        </div>
           <div class="small-heading">This is small heading</div>
+          <div class="copy-code" ><div><pre id="smallHeading" >  
+            &lt;div class="small-heading"&lt;This is small heading&lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('smallHeading')">Copy code</button>
+        </div>
           <div class="center-heading">Small text</div>
           <div class="small-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
+          <div class="copy-code" ><div><pre id="smallText" >  
+            &lt;div class="small-text"&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('smallText')">Copy code</button>
+        </div>
           <div class="center-heading">Grey text</div>
           <div class="grey-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
+          <div class="copy-code" ><div><pre id="greyText">  
+            &lt;div class="grey-text"&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('greyText')">Copy code</button>
+        </div>
           <div class="center-heading">Center text</div>
           <div class="center-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
-          <div class="center-heading-float">
-            Above are the various Headings and Texts, which can be used in
-            building of a website. Below is the Html code used to implement them
-          </div>
-          <img class="html-image" src="code/headings-html.png" />
+          <div class="copy-code" ><div><pre id="centerText" >  
+            &lt;div class="center-text"&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('centerText')">Copy code</button>
         </div>
+          
+          
 
         <div class="snack-bars" id="tabcontents">
+          <a name="snackbar"></a>
           <h2 class="main-heading">Snackbar</h2>
-          <div class="center-heading">Snack-bar button</div>
+          <div class="center-heading-float">
+            below is a basic Snack-bar which could be used in building a
+            website. Below it is there html code
+          </div>
 
           <div class="open-snackbar">
-            <button>OPEN SNACKBAR</button>
+            <button class="sanckbar-button" onClick="snackbar()">OPEN SNACKBAR</button>
           </div>
-          <div class="center-heading">Snack-bar</div>
+          
 
-          <div class="snackbar">
-            <div class="info">some information</div>
+          <div class="snackbar hidden" id="snackBar">
+            <div class="message">some information</div>
             <button class="undo">UNDO</button>
             <button class="close">X</button>
           </div>
-          <div class="center-heading-float">
-            Above is a basic Snack-bar which could be used in building a
-            website. Below is its html code
+
+          
+
+          
+          <div class="center-heading">Snack-bar</div>
+          <div class="snackbar">
+            <div class="message">some information</div>
+            <button class="undo">UNDO</button>
+            <button class="close">X</button>
           </div>
-          <img class="html-image" src="code/snack-bar-html.png" />
+          <div class="copy-code" ><div><pre id="centerText" >  
+            &lt;div class="snackbar"&gt;
+            &lt;div class="message"&gt;some information &lt;/div&gt;
+            &lt;button class="undo"&gt;UNDO &lt;/button&gt;
+            &lt;button class="close"&gt;X &lt;/button&gt;
+            &lt;/div&gt;</pre></div>
+           <button class="copy-button" onClick="copyText('centerText')">Copy code</button>
+        </div>
+
+         
+         
         </div>
       </div>
     </div>
+
     <script type="text/javascript" src="App.js"></script>
   </body>
 </html>

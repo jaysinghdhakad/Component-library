@@ -1,0 +1,47 @@
+.buttons {
+    width: 100%;
+    position: relative;
+  }
+  .button-primary {
+    display: block;
+    color: white;
+    box-shadow: 0.5px 2px grey;
+    background-color: var(--red-color);
+    border: 1px solid var(--red-color);
+    border-radius: 5px;
+    padding: 6px;
+    margin: 1rem auto;
+  }
+  .button-link {
+    display: block;
+    color: black;
+    box-shadow: 0.5px 2px grey;
+    background-color: transparent;
+    border: 1px solid var(--red-color);
+    border-radius: 5px;
+    padding: 6px;
+    margin: 1rem auto;
+  }
+  .button-floating {
+    z-index: 1;
+    height: 35px;
+    background-color: white;
+    color: var(--red-color);
+    width: 35px;
+    border: 1px solid var(--red-color);
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    left: 48.5%;
+  }
+  .button-icon {
+    display: block;
+    font-size: 20px;
+    height: 35px;
+    color: var(--red-color);
+    width: 35px;
+    border: 1px solid var(--red-color);
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 1rem auto;
+  }

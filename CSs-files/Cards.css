@@ -1,0 +1,68 @@
+.card-badge img {
+    margin: none;
+    height: 35px;
+    width: 35px;
+  }
+  
+  .card-badge {
+    display: block;
+    margin: 1rem auto;
+  
+    width: 45%;
+    height: auto;
+    /* border: 1px solid grey; */
+    padding: 0.6rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+      0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  }
+  .card-badge > .text {
+    padding: 10px;
+  }
+  .card-badge .post {
+    padding: 5px;
+  }
+  .card {
+    display: block;
+    margin: 1rem auto;
+  
+    width: 45%;
+    height: auto;
+    /* border: 1px solid grey; */
+    padding: 6px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+      0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  }
+  .Dismiss > .dismiss {
+    position: absolute;
+    right: 0;
+    top: 0.1rem;
+  
+    border-radius: 50%;
+    border: none;
+    font-size: 0.8rem;
+    background-color: white;
+  }
+  
+  .card img {
+    width: 100%;
+    background-color: grey;
+  }
+  .card .overlay {
+    position: absolute;
+  }
+  .textonly > span {
+    font-weight: bold;
+  }
+  .cards > .vertical {
+    height: 300px;
+    width: 150px;
+  }
+  .cards > .horizontal {
+    height: 150px;
+    width: 300px;
+  }

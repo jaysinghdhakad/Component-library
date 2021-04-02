@@ -1,0 +1,28 @@
+.alert {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 2rem;
+  padding: 2px;
+  border-radius: 8px;
+}
+.alert > img {
+  margin-left: 3rem;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+.alert > span {
+  margin-left: 1rem;
+}
+.success {
+  background-color: rgb(99, 218, 105, 1);
+}
+.failure {
+  background-color: rgb(247, 12, 12);
+}
+.warning {
+  background-color: rgb(235, 238, 39);
+}
+.info {
+  background-color: rgb(32, 112, 233);
+}

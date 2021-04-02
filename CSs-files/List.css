@@ -1,0 +1,23 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: space-between;
+  }
+  .spaced > li {
+    list-style: none;
+    font-size: 1.7rem;
+    font-size: bold;
+  }
+  
+  .stacked > li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    height: 60px;
+    background-color: rgb(27, 245, 143);
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
